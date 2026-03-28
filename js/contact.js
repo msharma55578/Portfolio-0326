@@ -41,13 +41,32 @@ if (contactForm) {
     }
 
     if (valid) {
-      submitBtn.textContent = 'Message Sent \u2713';
+      submitBtn.textContent = 'Sending...';
       submitBtn.disabled = true;
-      setTimeout(() => {
-        submitBtn.textContent = 'Send Message \u2708';
-        submitBtn.disabled = false;
-        contactForm.reset();
-      }, 2500);
+
+      const formData = new FormData(contactForm);
+      fetch(contactForm.action, {
+        method: 'POST',
+        body: formData
+      })
+        .then(res => res.json())
+        .then(data => {
+          if (data.success) {
+            submitBtn.textContent = 'Message Sent \u2713';
+            setTimeout(() => {
+              submitBtn.textContent = 'Send Message \u2708';
+              submitBtn.disabled = false;
+              contactForm.reset();
+            }, 2500);
+          } else {
+            submitBtn.textContent = 'Failed — Retry';
+            submitBtn.disabled = false;
+          }
+        })
+        .catch(() => {
+          submitBtn.textContent = 'Failed — Retry';
+          submitBtn.disabled = false;
+        });
     }
   });
 }

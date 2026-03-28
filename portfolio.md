@@ -449,8 +449,11 @@ Shown after clicking "View Details". Card rotates Y-axis 180° to reveal back fa
 - On submit: `e.preventDefault()`
 - Validate: name not empty, email matches regex, message not empty
 - Show inline error messages below each invalid field
-- On success: change button text to "Message Sent ✓", disable button briefly
-- No backend needed yet — can wire to Formspree / EmailJS later (URL to be added in Action Items)
+- On success: POST form data to **Web3Forms** API (`https://api.web3forms.com/submit`) via `fetch()`
+- **Web3Forms Dashboard**: https://app.web3forms.com/
+- **Access Key**: `9a713a7b-da8c-4290-b3e1-0ecc8b865e56` (hidden input in form)
+- Hidden fields: `access_key`, `subject` ("New Portfolio Contact Message"), `botcheck` (honeypot spam protection)
+- Button shows "Sending..." while request is in flight, "Message Sent ✓" on success, "Failed — Retry" on error
 
 ---
 

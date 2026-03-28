@@ -478,7 +478,10 @@
           </a>
         </div>
         <!-- Contact Form -->
-        <form class="contact-form reveal" id="contact-form" novalidate>
+        <form class="contact-form reveal" id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <input type="hidden" name="access_key" value="9a713a7b-da8c-4290-b3e1-0ecc8b865e56">
+          <input type="hidden" name="subject" value="New Portfolio Contact Message">
+          <input type="checkbox" name="botcheck" style="display:none">
           <div class="form-group">
             <label for="name">Your Name</label>
             <input type="text" id="name" name="name" placeholder="John Doe" required>
