@@ -1,0 +1,108 @@
+/* === Skills Section === */
+.skills {
+  background: var(--bg-primary);
+}
+
+/* === Category Heading === */
+.skills-category {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 40px 0 24px;
+}
+
+.skills-category:first-child {
+  margin-top: 0;
+}
+
+/* === Skill Rows === */
+.skill-row {
+  margin-bottom: 24px;
+}
+
+.skill-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: var(--text-primary);
+}
+
+.skill-track {
+  width: 100%;
+  height: 8px;
+  background: var(--card-border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 100%;
+  width: 0;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-light));
+  transition: width 1s ease;
+}
+
+.skill-fill.animated {
+  /* width set by JS via data-width */
+}
+
+/* === Tech Chips === */
+.skills-chips-heading {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: center;
+  margin: 60px 0 24px;
+}
+
+.skills-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.chip {
+  padding: 10px 24px;
+  border-radius: 50px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  color: var(--text-secondary);
+  font-size: 14px;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.4s ease, transform 0.4s ease, border-color 0.2s;
+}
+
+.chip.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.chip:hover {
+  border-color: var(--accent);
+}
+
+/* === Mobile === */
+@media (max-width: 768px) {
+  .skills-category {
+    font-size: 18px;
+    margin: 32px 0 20px;
+  }
+
+  .skill-label {
+    font-size: 14px;
+  }
+
+  .skills-chips-heading {
+    font-size: 18px;
+    margin-top: 48px;
+  }
+
+  .chip {
+    padding: 8px 18px;
+    font-size: 13px;
+  }
+}

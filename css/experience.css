@@ -1,0 +1,208 @@
+/* === Experience Section === */
+.experience {
+  background: var(--bg-primary);
+}
+
+/* === Timeline === */
+.timeline {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--accent);
+  transform: translateX(-50%);
+}
+
+/* === Entry === */
+.timeline-entry {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+.timeline-entry:last-child {
+  margin-bottom: 0;
+}
+
+/* Dot on the line */
+.timeline-dot {
+  position: absolute;
+  left: 50%;
+  top: 24px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  background: var(--bg-primary);
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+/* === Right entry: date left, card right === */
+.timeline-entry.right .timeline-date {
+  position: absolute;
+  right: calc(50% + 30px);
+  top: 16px;
+}
+
+.timeline-entry.right .timeline-card {
+  margin-left: calc(50% + 30px);
+  width: calc(50% - 50px);
+}
+
+/* === Left entry: date right, card left === */
+.timeline-entry.left .timeline-date {
+  position: absolute;
+  left: calc(50% + 30px);
+  top: 16px;
+}
+
+.timeline-entry.left .timeline-card {
+  margin-right: calc(50% + 30px);
+  width: calc(50% - 50px);
+}
+
+/* === Date Badge === */
+.timeline-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-light));
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* === Card === */
+.timeline-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  padding: 28px;
+  transition: border-color 0.2s;
+}
+
+.timeline-card:hover {
+  border-color: var(--accent);
+}
+
+.timeline-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.timeline-card-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-light));
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.timeline-card-header h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.timeline-company {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.timeline-location {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.timeline-summary {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.timeline-bullets {
+  list-style: none;
+}
+
+.timeline-bullets li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 6px;
+}
+
+.timeline-bullets li::before {
+  content: '▷';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 12px;
+}
+
+/* === Timeline Reveal Animation === */
+.timeline-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.timeline-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === Mobile === */
+@media (max-width: 768px) {
+  .timeline-line {
+    left: 16px;
+  }
+
+  .timeline-dot {
+    left: 16px;
+    top: 0;
+  }
+
+  .timeline-entry {
+    flex-direction: column;
+    padding-left: 40px;
+    margin-bottom: 40px;
+  }
+
+  .timeline-entry.right .timeline-date,
+  .timeline-entry.left .timeline-date {
+    position: static;
+    margin-bottom: 12px;
+  }
+
+  .timeline-entry.right .timeline-card,
+  .timeline-entry.left .timeline-card {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+}

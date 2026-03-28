@@ -1,0 +1,193 @@
+/* === About Section === */
+.about {
+  background: var(--bg-primary);
+}
+
+.about-grid {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+/* === Profile Card === */
+.about-card {
+  flex: 0 0 38%;
+}
+
+.about-card-inner {
+  background: linear-gradient(135deg, var(--accent), #4f46e5);
+  border-radius: 20px;
+  padding: 48px 32px;
+  text-align: center;
+}
+
+[data-theme="light"] .about-card-inner {
+  background: linear-gradient(135deg, #ede9fe, #fce7f3);
+}
+
+.about-avatar {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 24px;
+  position: relative;
+}
+
+.about-avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+.about-avatar-img.hidden {
+  display: none;
+}
+
+.about-initials {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-light));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 56px;
+  font-weight: 800;
+  color: #ffffff;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+.about-avatar-img:not(.hidden) + .about-initials {
+  display: none;
+}
+
+.about-role {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+[data-theme="light"] .about-role {
+  color: var(--text-primary);
+}
+
+.about-location {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+[data-theme="light"] .about-location {
+  color: var(--text-secondary);
+}
+
+/* === Bio === */
+.about-bio {
+  flex: 1;
+}
+
+.about-bio p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.about-bio .accent {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* === Stats Grid === */
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  transition: border-color 0.2s;
+}
+
+.stat-card:hover {
+  border-color: var(--accent);
+}
+
+.stat-icon {
+  font-size: 22px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.stat-card strong {
+  display: block;
+  font-size: 15px;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.stat-card span {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+/* === Tablet === */
+@media (max-width: 1024px) {
+  .about-grid {
+    gap: 36px;
+  }
+
+  .about-card {
+    flex: 0 0 34%;
+  }
+}
+
+/* === Mobile === */
+@media (max-width: 768px) {
+  .about-grid {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .about-card {
+    flex: none;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .about-card-inner {
+    padding: 36px 24px;
+  }
+
+  .about-avatar {
+    width: 140px;
+    height: 140px;
+  }
+
+  .about-initials {
+    font-size: 44px;
+  }
+
+  .about-bio p {
+    font-size: 15px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card {
+    padding: 16px;
+  }
+}

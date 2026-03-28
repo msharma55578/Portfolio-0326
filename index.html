@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chander Mohan — Senior Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <link rel="stylesheet" href="css/experience.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="nav-logo">CM</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+  </nav>
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-glow"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <span class="hero-badge">Welcome to my portfolio</span>
+      <h1 class="hero-name">Chander Mohan</h1>
+      <p class="hero-subtitle">Senior Frontend Developer | AI Integration Specialist</p>
+      <p class="hero-bio">Building scalable, AI-powered user experiences</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/msharma55578" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/chander-mohan-b4a932134/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:m.sharma55578@gmail.com" class="social-icon" aria-label="Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+      </div>
+      <div class="hero-arrow">↓</div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="section-heading">About Me</h2>
+      <div class="section-heading-bar"></div>
+      <div class="about-grid">
+        <!-- Profile Card -->
+        <div class="about-card reveal">
+          <div class="about-card-inner">
+            <div class="about-avatar">
+              <img id="profile-img" src="assets/profile.jpg" alt="Chander Mohan" class="about-avatar-img">
+              <div class="about-initials" id="profile-initials">CM</div>
+            </div>
+            <p class="about-role">Senior Frontend Developer</p>
+            <p class="about-location">Delhi, India</p>
+          </div>
+        </div>
+        <!-- Bio + Stats -->
+        <div class="about-bio reveal">
+          <p>I'm a passionate <span class="accent">Senior Frontend Developer</span> based in Delhi, India, specializing in building high-performance web applications with cutting-edge technologies.</p>
+          <p>With over 5 years of experience, I've led the development of AI-powered chat platforms, enterprise ERP systems, and learning applications. My expertise lies in React, Redux, and integrating multiple AI models like OpenAI, Gemini, and Claude to create seamless user experiences.</p>
+          <p>I'm passionate about UI/UX optimization, performance engineering, and mentoring teams to deliver scalable solutions. When I'm not coding, you might find me playing Kho-Kho at the national level or exploring new AI technologies.</p>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <span class="stat-icon">&lt;/&gt;</span>
+              <div>
+                <strong>5+ Years</strong>
+                <span>Frontend Development</span>
+              </div>
+            </div>
+            <div class="stat-card">
+              <span class="stat-icon">✦</span>
+              <div>
+                <strong>AI Integration</strong>
+                <span>Multi-LLM Platforms</span>
+              </div>
+            </div>
+            <div class="stat-card">
+              <span class="stat-icon">⚡</span>
+              <div>
+                <strong>Performance</strong>
+                <span>Core Web Vitals</span>
+              </div>
+            </div>
+            <div class="stat-card">
+              <span class="stat-icon">👥</span>
+              <div>
+                <strong>Leadership</strong>
+                <span>Team &amp; Mentoring</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2 class="section-heading">Skills &amp; Expertise</h2>
+      <div class="section-heading-bar"></div>
+
+      <div class="skills-bars" id="skills-bars">
+        <!-- Frontend Technologies -->
+        <h3 class="skills-category">Frontend Technologies</h3>
+        <div class="skill-row">
+          <div class="skill-label"><span>React</span><span>95%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="95"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>Redux</span><span>90%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>JavaScript/TypeScript</span><span>92%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="92"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>HTML/CSS</span><span>95%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="95"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>Tailwind CSS</span><span>88%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="88"></div></div>
+        </div>
+
+        <!-- Tools & Others -->
+        <h3 class="skills-category">Tools &amp; Others</h3>
+        <div class="skill-row">
+          <div class="skill-label"><span>Git &amp; GitHub</span><span>90%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>OpenAI Integration</span><span>85%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>UI/UX Design</span><span>85%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>C++</span><span>75%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>Code Reviews</span><span>88%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="88"></div></div>
+        </div>
+      </div>
+
+      <!-- Tech Chips -->
+      <h3 class="skills-chips-heading">Technologies I Work With</h3>
+      <div class="skills-chips" id="skills-chips">
+        <span class="chip">React</span>
+        <span class="chip">Redux</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">TypeScript</span>
+        <span class="chip">HTML</span>
+        <span class="chip">CSS</span>
+        <span class="chip">Tailwind CSS</span>
+        <span class="chip">OpenAI</span>
+        <span class="chip">Gemini</span>
+        <span class="chip">Claude</span>
+        <span class="chip">Git</span>
+        <span class="chip">UI/UX</span>
+        <span class="chip">C++</span>
+        <span class="chip">REST API</span>
+        <span class="chip">Node.js</span>
+        <span class="chip">Vite</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <h2 class="section-heading">Experience Timeline</h2>
+      <div class="section-heading-bar"></div>
+      <div class="timeline">
+        <div class="timeline-line"></div>
+
+        <!-- Entry 1 — right -->
+        <div class="timeline-entry right timeline-reveal">
+          <div class="timeline-date"><span>📅</span> 2022 - Present</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <span class="timeline-card-icon">🏢</span>
+              <div>
+                <h3>Senior Frontend Developer</h3>
+                <p class="timeline-company">GALE</p>
+                <p class="timeline-location">Bangalore, India</p>
+              </div>
+            </div>
+            <p class="timeline-summary">Leading frontend development for AI-powered platforms</p>
+            <ul class="timeline-bullets">
+              <li>Built multi-LLM AI chat platform integrating OpenAI, Gemini, and Claude</li>
+              <li>Implemented advanced session management and project workflows</li>
+              <li>Optimized application performance by 40% through code splitting</li>
+              <li>Led code reviews and mentored junior developers</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Entry 2 — left -->
+        <div class="timeline-entry left timeline-reveal">
+          <div class="timeline-date"><span>📅</span> 2020 - 2022</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <span class="timeline-card-icon">🏢</span>
+              <div>
+                <h3>Frontend Developer</h3>
+                <p class="timeline-company">K12 Techno Services</p>
+                <p class="timeline-location">Bangalore, India</p>
+              </div>
+            </div>
+            <p class="timeline-summary">Developed enterprise solutions for educational platforms</p>
+            <ul class="timeline-bullets">
+              <li>Developed Everest ERP platform serving 10,000+ users</li>
+              <li>Created Sure Learning App with interactive UI components</li>
+              <li>Implemented responsive designs for multiple device types</li>
+              <li>Collaborated with cross-functional teams for feature delivery</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Entry 3 — right -->
+        <div class="timeline-entry right timeline-reveal">
+          <div class="timeline-date"><span>📅</span> 2019 - 2020</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <span class="timeline-card-icon">🏢</span>
+              <div>
+                <h3>Frontend Developer Intern</h3>
+                <p class="timeline-company">Interglobe Technology</p>
+                <p class="timeline-location">Bangalore, India</p>
+              </div>
+            </div>
+            <p class="timeline-summary">Gained hands-on experience in modern web development</p>
+            <ul class="timeline-bullets">
+              <li>Worked on React-based web applications</li>
+              <li>Learned best practices in version control and agile development</li>
+              <li>Contributed to UI/UX improvements</li>
+              <li>Participated in code reviews and team discussions</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2 class="section-heading">Featured Projects</h2>
+      <div class="section-heading-bar"></div>
+      <div class="projects-grid">
+
+        <!-- Project 1: AI Chat Platform -->
+        <div class="project-card project-reveal" id="project-1">
+          <div class="project-inner">
+            <!-- Front -->
+            <div class="project-front">
+              <div class="project-image" style="background: linear-gradient(135deg, #e879a8, #a855f7, #7c3aed)">
+                <div class="project-image-icon">💡</div>
+                <span class="project-slug">ai-chat-interface</span>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">AI Chat Platform</h3>
+                <p class="project-desc">A sophisticated multi-LLM chat platform integrating OpenAI GPT-4, Google Gemini, and Anthropic Claude.</p>
+                <div class="project-chips">
+                  <span class="chip">React</span>
+                  <span class="chip visible">Redux</span>
+                  <span class="chip visible">TypeScript</span>
+                  <span class="chip visible">OpenAI API</span>
+                  <span class="chip visible">Gemini API</span>
+                  <span class="chip visible">Tailwind CSS</span>
+                </div>
+                <div class="project-actions">
+                  <button class="btn btn-primary project-flip-btn" data-target="project-1">View Details ↗</button>
+                  <a href="#" target="_blank" rel="noopener noreferrer" class="project-github-btn" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Back -->
+            <div class="project-back">
+              <div class="project-back-header" style="background: linear-gradient(135deg, #e879a8, #a855f7, #7c3aed)">
+                <h3>AI Chat Platform</h3>
+                <button class="project-close-btn" data-target="project-1">✕</button>
+              </div>
+              <div class="project-back-body">
+                <p class="project-back-desc">A sophisticated multi-LLM chat platform integrating OpenAI GPT-4, Google Gemini, and Anthropic Claude. Features include real-time conversations, session management, and intelligent context switching.</p>
+                <div class="project-stats">
+                  <div class="project-stat">
+                    <span class="project-stat-icon">📅</span>
+                    <small>Duration</small>
+                    <strong>6 months</strong>
+                  </div>
+                  <div class="project-stat">
+                    <span class="project-stat-icon">👥</span>
+                    <small>Team</small>
+                    <strong>5 developers</strong>
+                  </div>
+                  <div class="project-stat">
+                    <span class="project-stat-icon">⭐</span>
+                    <small>Role</small>
+                    <strong>Lead Frontend Developer</strong>
+                  </div>
+                </div>
+                <h4 class="project-highlights-title">⭐ Key Highlights</h4>
+                <ul class="project-highlights">
+                  <li>Integrated 3 different AI models seamlessly</li>
+                  <li>Implemented real-time message streaming</li>
+                  <li>Built context-aware conversation management</li>
+                  <li>Optimized performance for 1000+ concurrent users</li>
+                </ul>
+                <div class="project-actions">
+                  <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo ↗</a>
+                  <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline project-source-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    Source Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Everest ERP Platform -->
+        <div class="project-card project-reveal" id="project-2">
+          <div class="project-inner">
+            <!-- Front -->
+            <div class="project-front">
+              <div class="project-image" style="background: linear-gradient(135deg, #2dd4bf, #3b82f6, #0f172a)">
+                <div class="project-image-icon">💡</div>
+                <span class="project-slug">erp-dashboard</span>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Everest ERP Platform</h3>
+                <p class="project-desc">Enterprise resource planning system for educational institutions. Handles student management, attendance tracking, grade management, and financial operations.</p>
+                <div class="project-chips">
+                  <span class="chip visible">React</span>
+                  <span class="chip visible">Redux</span>
+                  <span class="chip visible">JavaScript</span>
+                  <span class="chip visible">REST API</span>
+                  <span class="chip visible">Material UI</span>
+                </div>
+                <div class="project-actions">
+                  <button class="btn btn-primary project-flip-btn" data-target="project-2">View Details ↗</button>
+                  <a href="#" target="_blank" rel="noopener noreferrer" class="project-github-btn" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Back -->
+            <div class="project-back">
+              <div class="project-back-header" style="background: linear-gradient(135deg, #2dd4bf, #3b82f6, #0f172a)">
+                <h3>Everest ERP Platform</h3>
+                <button class="project-close-btn" data-target="project-2">✕</button>
+              </div>
+              <div class="project-back-body">
+                <p class="project-back-desc">Enterprise resource planning system for educational institutions. Handles student management, attendance tracking, grade management, and financial operations with 10,000+ active users.</p>
+                <div class="project-stats">
+                  <div class="project-stat">
+                    <span class="project-stat-icon">📅</span>
+                    <small>Duration</small>
+                    <strong>1 year</strong>
+                  </div>
+                  <div class="project-stat">
+                    <span class="project-stat-icon">👥</span>
+                    <small>Team</small>
+                    <strong>8 developers</strong>
+                  </div>
+                  <div class="project-stat">
+                    <span class="project-stat-icon">⭐</span>
+                    <small>Role</small>
+                    <strong>Senior Frontend Developer</strong>
+                  </div>
+                </div>
+                <h4 class="project-highlights-title">⭐ Key Highlights</h4>
+                <ul class="project-highlights">
+                  <li>Managed 10,000+ active users across multiple institutions</li>
+                  <li>Built complex data tables with advanced filtering</li>
+                  <li>Implemented role-based access control</li>
+                  <li>Reduced page load time by 40%</li>
+                </ul>
+                <div class="project-actions">
+                  <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo ↗</a>
+                  <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline project-source-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    Source Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-heading">Get In Touch</h2>
+      <div class="section-heading-bar"></div>
+      <p class="contact-subtitle">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+      <div class="contact-grid">
+        <!-- Info Cards -->
+        <div class="contact-info reveal">
+          <h3 class="contact-info-heading">Contact Information</h3>
+          <a href="mailto:m.sharma55578@gmail.com" class="contact-card">
+            <span class="contact-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </span>
+            <div>
+              <small>Email</small>
+              <span>m.sharma55578@gmail.com</span>
+            </div>
+          </a>
+          <div class="contact-card">
+            <span class="contact-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            </span>
+            <div>
+              <small>Location</small>
+              <span>Delhi, India</span>
+            </div>
+          </div>
+          <a href="https://www.linkedin.com/in/chander-mohan-b4a932134/" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <span class="contact-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </span>
+            <div>
+              <small>LinkedIn</small>
+              <span>linkedin.com/in/chander-mohan</span>
+            </div>
+          </a>
+          <a href="https://github.com/msharma55578" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <span class="contact-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </span>
+            <div>
+              <small>GitHub</small>
+              <span>github.com/msharma55578</span>
+            </div>
+          </a>
+        </div>
+        <!-- Contact Form -->
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+            <span class="form-error" id="name-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            <span class="form-error" id="email-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+            <span class="form-error" id="message-error"></span>
+          </div>
+          <button type="submit" class="btn btn-primary contact-submit">Send Message ✈</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <span class="footer-copy">&copy; 2026 Chander Mohan. All rights reserved.</span>
+    <span class="footer-heart">Made with <span style="color:#ef4444">❤️</span> in Delhi</span>
+    <a href="#home" class="footer-top">Back to Top &uarr;</a>
+  </footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

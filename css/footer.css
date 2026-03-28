@@ -1,0 +1,35 @@
+/* === Footer === */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 60px;
+  border-top: 1px solid var(--card-border);
+  background: var(--bg-primary);
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.footer-copy,
+.footer-heart,
+.footer-top {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.footer-top {
+  transition: color 0.2s;
+}
+
+.footer-top:hover {
+  color: var(--accent);
+}
+
+/* === Mobile === */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    padding: 20px;
+  }
+}
